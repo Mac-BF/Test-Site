@@ -1,13 +1,12 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sparkles, Wind, Leaf, Heart, ArrowRight, Brain, Palette, Users, Twitter, Instagram, Globe } from 'lucide-react';
-import FluidBackground from './components/FluidBackground';
-import InteractiveSanctuary from './components/InteractiveSanctuary';
-import BentoFeatures from './components/BentoFeatures';
-import Navigation from './components/Navigation';
-import Testimonials from './components/Testimonials';
-import Pricing from './components/Pricing';
+import { Sparkles, Brain, Palette, Users, Twitter, Instagram, Globe } from 'lucide-react';
+import FluidBackground from './components/FluidBackground.tsx';
+import InteractiveSanctuary from './components/InteractiveSanctuary.tsx';
+import BentoFeatures from './components/BentoFeatures.tsx';
+import Navigation from './components/Navigation.tsx';
+import Testimonials from './components/Testimonials.tsx';
+import Pricing from './components/Pricing.tsx';
 
 const App: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -74,11 +73,9 @@ const App: React.FC = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             className="relative"
           >
-            {/* Tablet Illustration Mockup */}
             <div className="relative aspect-[4/3] bg-gray-900 dark:bg-gray-800 rounded-[3rem] p-4 shadow-2xl overflow-hidden group">
               <div className="absolute inset-0 bg-white dark:bg-gray-900 rounded-[2.5rem] m-2 overflow-hidden flex items-center justify-center p-8">
                 <div className="w-full h-full relative">
-                  {/* Biomorphic Shape Animation inside tablet */}
                   <motion.div 
                     animate={{ 
                       borderRadius: ["30% 70% 70% 30% / 30% 30% 70% 70%", "60% 40% 30% 70% / 60% 30% 70% 40%", "30% 70% 70% 30% / 30% 30% 70% 70%"] 
@@ -99,13 +96,11 @@ const App: React.FC = () => {
               </div>
               <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-700 dark:bg-gray-600 rounded-full" />
             </div>
-            {/* Floating decoration */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-emerald-100/40 dark:bg-emerald-500/10 rounded-full blur-3xl -z-10 animate-pulse" />
           </motion.div>
         </div>
       </section>
 
-      {/* Feature Icons Row (Transition Section) */}
       <section className="py-24 px-6 border-b border-gray-50 dark:border-gray-800">
         <div className="max-w-5xl mx-auto flex flex-col md:flex-row items-center justify-center gap-16 md:gap-24">
           <div className="flex flex-col items-center gap-6 group">
@@ -129,19 +124,11 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Philosophy / Features Bento */}
       <BentoFeatures />
-
-      {/* Interactive AI Tool */}
       <InteractiveSanctuary />
-
-      {/* Pricing Section */}
       <Pricing />
-
-      {/* Testimonials */}
       <Testimonials />
 
-      {/* Final CTA */}
       <section className="py-40 px-6 overflow-hidden relative">
         <div className="max-w-4xl mx-auto text-center">
           <motion.div
@@ -164,7 +151,6 @@ const App: React.FC = () => {
         </div>
       </section>
 
-      {/* Footer */}
       <footer className="py-24 px-6 md:px-12 bg-white/40 dark:bg-black/20 backdrop-blur-md border-t border-gray-100 dark:border-gray-800">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">
