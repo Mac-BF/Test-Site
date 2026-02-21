@@ -8,7 +8,7 @@ const plans = [
     name: "Seed",
     price: "$0",
     description: "Perfect for exploring the fluid canvas.",
-    features: ["Organic UI access", "3 AI-generated sanctuaries", "Basic emotional mapping", "Community support"],
+    features: ["Organic UI access", "3 personalized sanctuaries", "Basic emotional mapping", "Community support"],
     button: "Get Started",
     popular: false,
     color: "bg-emerald-50 dark:bg-emerald-900/10"
@@ -17,7 +17,7 @@ const plans = [
     name: "Bloom",
     price: "$19",
     description: "Unlock the full potential of your rhythm.",
-    features: ["Unlimited AI sanctuaries", "Circadian theme engine", "Advanced data visualization", "Early access to new tools", "Priority rendering"],
+    features: ["Unlimited personalized sanctuaries", "Circadian theme engine", "Advanced data visualization", "Early access to new tools", "Priority rendering"],
     button: "Start Free Trial",
     popular: true,
     color: "bg-rose-50 dark:bg-rose-900/20"

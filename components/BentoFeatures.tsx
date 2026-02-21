@@ -34,7 +34,7 @@ const features = [
   },
   {
     title: "Generative Canvas",
-    desc: "AI-assisted design tools that adapt to your style and mood automatically.",
+    desc: "Adaptive design tools that align with your style and mood automatically.",
     icon: <Wand2 className="w-6 h-6" />,
     color: "bg-purple-50 dark:bg-purple-900/10 text-purple-600 dark:text-purple-400",
     size: "col-span-1"

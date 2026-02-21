@@ -55,7 +55,7 @@ const App: React.FC = () => {
               Unlock Your <span className="text-rose-500 italic font-normal">Creative</span> Potential
             </h1>
             <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-light mb-12 max-w-xl leading-relaxed">
-              Effortless design tools powered by AI, shaped for the human spirit.
+              Effortless design tools powered by intelligent systems, shaped for the human spirit.
             </p>
             <div className="flex flex-wrap items-center gap-6 mb-4">
               <button className="px-10 py-5 bg-gray-900 dark:bg-rose-500 text-white rounded-2xl text-lg font-medium hover:bg-gray-800 dark:hover:bg-rose-600 transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-gray-300 dark:shadow-rose-900/20">
@@ -74,31 +74,6 @@ const App: React.FC = () => {
             transition={{ duration: 1.2, delay: 0.2 }}
             className="relative"
           >
-            {/* Tablet Illustration Mockup */}
-            <div className="relative aspect-[4/3] bg-gray-900 dark:bg-gray-800 rounded-[3rem] p-4 shadow-2xl overflow-hidden group">
-              <div className="absolute inset-0 bg-white dark:bg-gray-900 rounded-[2.5rem] m-2 overflow-hidden flex items-center justify-center p-8">
-                <div className="w-full h-full relative">
-                  {/* Biomorphic Shape Animation inside tablet */}
-                  <motion.div 
-                    animate={{ 
-                      borderRadius: ["30% 70% 70% 30% / 30% 30% 70% 70%", "60% 40% 30% 70% / 60% 30% 70% 40%", "30% 70% 70% 30% / 30% 30% 70% 70%"] 
-                    }}
-                    transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-                    className="absolute inset-0 bg-gradient-to-br from-rose-100 dark:from-rose-900/30 via-emerald-50 dark:via-emerald-900/20 to-amber-50 dark:to-amber-900/20 opacity-80"
-                  />
-                  <div className="relative z-10 flex flex-col h-full items-center justify-center text-center">
-                    <div className="w-48 h-48 border-2 border-dashed border-gray-200 dark:border-gray-700 rounded-full flex items-center justify-center animate-spin-slow">
-                      <Sparkles className="w-12 h-12 text-rose-300 dark:text-rose-500" />
-                    </div>
-                    <div className="mt-8 space-y-2 opacity-40">
-                      <div className="w-32 h-2 bg-gray-200 dark:bg-gray-700 rounded-full mx-auto" />
-                      <div className="w-24 h-2 bg-gray-100 dark:bg-gray-800 rounded-full mx-auto" />
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div className="absolute bottom-6 left-1/2 -translate-x-1/2 w-3 h-3 bg-gray-700 dark:bg-gray-600 rounded-full" />
-            </div>
             {/* Floating decoration */}
             <div className="absolute -top-10 -right-10 w-40 h-40 bg-emerald-100/40 dark:bg-emerald-500/10 rounded-full blur-3xl -z-10 animate-pulse" />
           </motion.div>
@@ -112,7 +87,7 @@ const App: React.FC = () => {
             <div className="w-20 h-20 rounded-full bg-rose-50 dark:bg-rose-900/20 flex items-center justify-center text-rose-500 dark:text-rose-400 group-hover:scale-110 transition-transform shadow-inner">
               <Brain className="w-10 h-10" />
             </div>
-            <span className="text-xl font-display text-gray-700 dark:text-gray-300 font-light text-center">AI-Powered Ideas</span>
+            <span className="text-xl font-display text-gray-700 dark:text-gray-300 font-light text-center">Intelligent Ideas</span>
           </div>
           <div className="flex flex-col items-center gap-6 group">
             <div className="w-20 h-20 rounded-full bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center text-emerald-500 dark:text-emerald-400 group-hover:scale-110 transition-transform shadow-inner">
@@ -132,7 +107,7 @@ const App: React.FC = () => {
       {/* Philosophy / Features Bento */}
       <BentoFeatures />
 
-      {/* Interactive AI Tool */}
+      {/* Interactive Sanctuary Tool */}
       <InteractiveSanctuary />
 
       {/* Pricing Section */}

@@ -14,8 +14,8 @@ const InteractiveSanctuary: React.FC = () => {
     setLoading(true);
     
     try {
-      const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
-      const response = await ai.models.generateContent({
+      const genAI = new GoogleGenAI({ apiKey: process.env.API_KEY });
+      const response = await genAI.models.generateContent({
         model: 'gemini-3-flash-preview',
         contents: `I feel: ${mood}. Describe a personalized 'Digital Sanctuary' for this emotion. Include a short 2-sentence poetic affirmation and a 3-sentence visual description of a room that would feel calming right now.`,
         config: {
@@ -46,7 +46,7 @@ const InteractiveSanctuary: React.FC = () => {
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-display font-light mb-6 dark:text-white">Your Sanctuary <span className="text-amber-500 italic">Architecture</span></h2>
-          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-xl mx-auto">Tell us how you feel, and our AI will sculpt a personalized visual and emotional space for your current state.</p>
+          <p className="text-lg text-gray-500 dark:text-gray-400 max-w-xl mx-auto">Tell us how you feel, and our system will sculpt a personalized visual and emotional space for your current state.</p>
         </div>
 
         <div className="glass-panel rounded-[3rem] p-8 md:p-12 shadow-2xl dark:bg-white/5 dark:border-white/10">
