@@ -1,7 +1,7 @@
 
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, useScroll, useTransform } from 'framer-motion';
-import { Sparkles, Wind, Leaf, Heart, ArrowRight, Brain, Palette, Users, Twitter, Instagram, Globe } from 'lucide-react';
+import { Sparkles, Wind, Leaf, Heart, ArrowRight, Brain, Palette, Users, Twitter, Instagram, Globe, Video } from 'lucide-react';
 import FluidBackground from './components/FluidBackground';
 import InteractiveSanctuary from './components/InteractiveSanctuary';
 import BentoFeatures from './components/BentoFeatures';
@@ -44,6 +44,9 @@ const App: React.FC = () => {
 
       {/* Hero Section */}
       <section className="relative min-h-screen flex flex-col items-center justify-center px-6 pt-32 overflow-hidden">
+        {/*https://naizooaeqziukaetimhe.supabase.co/storage/v1/object/sign/Web%20Creation%20Media/Office_Video_Generation_Request.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zMTU2NjIwYS05ZjJhLTQwNTItOTM5OC1hNGJhMzRhNDJkNGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJXZWIgQ3JlYXRpb24gTWVkaWEvT2ZmaWNlX1ZpZGVvX0dlbmVyYXRpb25fUmVxdWVzdC5tcDQiLCJpYXQiOjE3NzE3MDUzNTgsImV4cCI6MTc3NDI5NzM1OH0.mcEEUDKCKVlHtrqadRmbLmwIq06YQff6d45-YF__aog*/}
+        
+
         <div className="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-2 gap-12 items-center z-10">
           <motion.div
             initial={{ opacity: 0, x: -30 }}
@@ -51,7 +54,7 @@ const App: React.FC = () => {
             transition={{ duration: 1, ease: "easeOut" }}
             className="text-left"
           >
-            <h1 className="text-6xl md:text-7xl xl:text-8xl font-display font-light tracking-tight leading-[1.1] text-gray-900 dark:text-white mb-8">
+            <h1 className="text-6xl md:text-7xl xl:text-8xl font-display font-light tracking-tight leading-[1.1] text-gray-900 dark:text-white mb-12">
               Unlock Your <span className="text-rose-500 italic font-normal">Creative</span> Potential
             </h1>
             <p className="text-xl md:text-2xl text-gray-500 dark:text-gray-400 font-light mb-12 max-w-xl leading-relaxed">
@@ -72,10 +75,14 @@ const App: React.FC = () => {
             initial={{ opacity: 0, scale: 0.9, rotate: 2 }}
             animate={{ opacity: 1, scale: 1, rotate: 0 }}
             transition={{ duration: 1.2, delay: 0.2 }}
-            className="relative"
+            className="relative flex justify-center lg:justify-end"
           >
-            {/* Floating decoration */}
-            <div className="absolute -top-10 -right-10 w-40 h-40 bg-emerald-100/40 dark:bg-emerald-500/10 rounded-full blur-3xl -z-10 animate-pulse" />
+            <video
+              src="https://naizooaeqziukaetimhe.supabase.co/storage/v1/object/sign/Web%20Creation%20Media/Office_Video_Generation_Request.mp4?token=eyJraWQiOiJzdG9yYWdlLXVybC1zaWduaW5nLWtleV8zMTU2NjIwYS05ZjJhLTQwNTItOTM5OC1hNGJhMzRhNDJkNGQiLCJhbGciOiJIUzI1NiJ9.eyJ1cmwiOiJXZWIgQ3JlYXRpb24gTWVkaWEvT2ZmaWNlX1ZpZGVvX0dlbmVyYXRpb25fUmVxdWVzdC5tcDQiLCJpYXQiOjE3NzE3MDUzNTgsImV4cCI6MTc3NDI5NzM1OH0.mcEEUDKCKVlHtrqadRmbLmwIq06YQff6d45-YF__aog"
+            
+              controls
+              className="rounded-3xl shadow-2xl w-full max-w-3xl"
+            />
           </motion.div>
         </div>
       </section>
